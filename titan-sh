@@ -12,12 +12,15 @@ echo "=======================Titan Node======================="
 echo -e ""
 echo -e ""
 echo -e '\e[34m'
-echo -e '  _   ____ ___  _____  _   _     '
-echo -e '  | | | |_   ) )  | |  | | | |_| '
-echo -e '  |_| |_|   _)_)  |_|  |_| |_| | '
+echo -e ' ██████╗██████╗ ██╗   ██╗██████╗ ████████╗ ██████╗  █████╗ ██╗██████╗ ██████╗ ██████╗  ██████╗ ██████╗ ██╗  ██╗██╗███╗   ██╗██████╗ ██╗'
+echo -e '██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗██║██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║  ██║██║████╗  ██║██╔══██╗██║'
+echo -e '██║     ██████╔╝ ╚████╔╝ ██████╔╝   ██║   ██║   ██║███████║██║██████╔╝██║  ██║██████╔╝██║   ██║██████╔╝███████║██║██╔██╗ ██║██║  ██║██║'
+echo -e '██║     ██╔══██╗  ╚██╔╝  ██╔═══╝    ██║   ██║   ██║██╔══██║██║██╔══██╗██║  ██║██╔══██╗██║   ██║██╔═══╝ ██╔══██║██║██║╚██╗██║██║  ██║██║'
+echo -e '╚██████╗██║  ██║   ██║   ██║        ██║   ╚██████╔╝██║  ██║██║██║  ██║██████╔╝██║  ██║╚██████╔╝██║     ██║  ██║██║██║ ╚████║██████╔╝██║'
+echo -e ' ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝'
 echo -e '\e[0m'
-echo -e "                 \033[48;2;9;10;12m iF3tih \e[0m";
-echo -e "\e[0;37m Connect With Me: \e[4;35mhttps://t.me/iF3tih/";
+echo -e "                 \033[48;2;9;10;12m CryptoAirdropHindi \e[0m";
+echo -e "\e[0;37m Subscribe Our Telegram Channel: \e[4;35mhttps://t.me/Crypto_airdropHM/";
 echo -e "\e[0m"
 echo -e ""
 echo -e ""
@@ -49,7 +52,7 @@ else
 fi
 
 # Tarik gambar Docker 
-docker pull iF3tih/titan-edge
+docker pull nezha123/titan-edge
 
 # Buat direktori penyimpanan file gambar 
 mkdir -p $volume_dir
@@ -73,7 +76,7 @@ do
     echo "$volume_path $mount_point ext4 loop,defaults 0 0" | sudo tee -a /etc/fstab
 
     # Jalankan container dan setel kebijakan mulai ulang ke selalu 
-    container_id=$(docker run -d --restart always -v $mount_point:/root/.titanedge/storage --name "titan$i" iF3tih/titan-edge)
+    container_id=$(docker run -d --restart always -v $mount_point:/root/.titanedge/storage --name "titan$i" nezha123/titan-edge)
 
     echo "node titan$i telah memulai ID containe $container_id"
 
